@@ -1,0 +1,66 @@
+/* Main CSS Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F8EDED; /* Light background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.header-area {
+    background-color: #173B45; /* Dark header background */
+    color: white;
+}
+
+/* Center the form in the middle of the page */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #B43F3F; /* Dark red border */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better appearance */
+}
+
+.container form label {
+    margin-top: 10px;
+}
+
+.container form input {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #B43F3F; /* Dark red border */
+    border-radius: 5px;
+    outline: none;
+}
+
+.container form button {
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    background-color: #FF8225; /* Bright orange background */
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.container form button:hover {
+    background-color: #173B45; /* Dark green background on hover */
+}
+
+/* Other existing styles ... */

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Featured Vehicles</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="header-area">
+        <div class="header">
+            <div class="top-bar">
+                <div class="social-icons">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-google"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </div>
+                <div class="user-info">
+                    <span id="user-name"></span>
+                    <div class="user-account">
+                        <i class="fa fa-user"></i>
+                        <span>My Account</span>
+                    </div>
+                    <div class="user-dropdown">
+                        <a href="#" onclick="logout()">Logout</a>
+                    </div>
+                    <div class="separator">|</div>
+                    <div class="language-select">
+                        <select id="language-select">
+                            <option value="en">En-Gb</option>
+                        </select>
+                    </div>
+                    <div class="separator">|</div>
+                    <div class="currency-select">
+                        <select id="currency-select">
+                            <option value="USD">$ USD</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="logo-search">
+                <div class="logo">AUTIMA</div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search entire store here ...">
+                    <button type="button">Search</button>
+                </div>
+                <div class="wishlist-cart">
+                    <div class="wishlist">
+                        <a href="#">
+                            <i class="fa fa-heart"></i> Wish List
+                        </a>
+                        <span class="wishlist-count">3</span>
+                    </div>
+                    <div class="cart">
+                        <a href="#">
+                            <i class="fa fa-shopping-cart"></i> My Cart
+                        </a>
+                        <span class="cart-count">2</span>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-bar">
+                <a href="#">HOME</a>
+                <a href="#">SHOP</a>
+                <a href="#">BLOG</a>
+                <a href="#">PAGES</a>
+                <a href="#">ABOUT US</a>
+                <a href="#">CONTACT US</a>
+                <a href="add-car.html" class="add-car-btn"><i class="fa fa-plus"></i> Add Car to Sell</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>FEATURED <span>VEHICLES</span></h1>
+        <p>Check out our featured vehicles</p>
+        <div class="card-container" id="card-container">
+            <!-- Existing static car cards -->
+            <div class="card audi">
+                <img src="images/kia.jpg" alt="kia 2021">
+                <h3>kia niro 2020</h3>
+                <p>New Car / Automatic / Sports</p>
+                <p><b>$16,000</b></p>
+            </div>
+            <div class="card audi">
+                <img src="images/id4.jpeg" alt="id4">
+                <h3>ID.4 2020</h3>
+                <p>New Car / Automatic / Sports</p>
+                <p><b>$20,000</b></p>
+            </div>
+            <div class="card audi">
+                <img src="images/lex-2015.avif" alt="Lexus CT 2017">
+                <h3>Lexus CT 2017</h3>
+                <p>New Car / Automatic / Sports</p>
+                <p><b>$19,000</b></p>
+            </div>
+            <div class="card audi">
+                <img src="images/ferrari.jpg" alt="Lexus CT 2017">
+                <h3>ferrari 456 iralia</h3>
+                <p>New Car / Automatic / Sports</p>
+                <p><b>$70,000</b></p>
+            </div>
+            <!-- Dynamic car cards will be added here -->
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

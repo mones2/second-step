@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Register Page</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Car Image -->
+
+        <!-- Login Form -->
+        <form id="login-form">
+            <h2>Login</h2>
+            <div class="input-group">
+                <span class="icon">
+                    <i class="fas fa-user"></i>
+                </span>
+                <input type="text" id="login-username" placeholder="Username" required>
+            </div>
+            <div class="input-group">
+                <span class="icon">
+                    <i class="fas fa-lock"></i>
+                </span>
+                <input type="password" id="login-password" placeholder="Password" required>
+            </div>
+            <div class="forgot-pass">
+                <a href="#" onclick="showForgotPasswordForm()">Forgot Password?</a>
+            </div>
+            <button type="submit" class="btn" onclick="login(event)">Login</button>
+            <div class="sign-link">
+                <p>Don't have an account? <a href="#" onclick="toggleForms()">Register</a></p>
+            </div>
+        </form>
+
+        <!-- Register Form -->
+        <form id="register-form" style="display: none;" onsubmit="register(event)">
+            <h2>Register</h2>
+            <div class="input-group">
+                <span class="icon">
+                    <i class="fas fa-user"></i>
+                </span>
+                <input type="text" id="register-username" placeholder="Username" required>
+            </div>
+            <div class="input-group">
+                <span class="icon">
+                    <i class="fas fa-envelope"></i>
+                </span>
+                <input type="email" id="register-email" placeholder="Email" required>
+            </div>
+            <div class="input-group">
+                <span class="icon">
+                    <i class="fas fa-birthday-cake"></i>
+                </span>
+                <input type="date" id="register-birthday" placeholder="Birthday" required>
+            </div>
+            <div class="input-group">
+                <span class="icon">
+                    <i class="fas fa-lock"></i>
+                </span>
+                <input type="password" id="register-password" placeholder="Password" required oninput="showPasswordStrength(this.value)">
+            </div>
+            <div id="password-strength" class="password-strength"></div>
+            <button type="submit" class="btn">Register</button>
+            <div class="sign-link">
+                <p>Already have an account? <a href="#" onclick="toggleForms()">Login</a></p>
+            </div>
+        </form>
+
+        <!-- Reset Password Form -->
+        <form id="reset-form" style="display: none;" onsubmit="resetPassword(event)">
+            <h2>Reset Password</h2>
+            <div class="input-group">
+                <span class="icon">
+                    <i class="fas fa-user"></i>
+                </span>
+                <input type="text" id="reset-username" placeholder="Username" required>
+            </div>
+            <div class="input-group">
+                <span class="icon">
+                    <i class="fas fa-envelope"></i>
+                </span>
+                <input type="email" id="reset-email" placeholder="Email" required>
+            </div>
+            <div id="new-password-field" class="input-group" style="display: none;">
+                <span class="icon">
+                    <i class="fas fa-lock"></i>
+                </span>
+                <input type="password" id="new-password" placeholder="New Password" required oninput="showPasswordStrengthReset(this.value)">
+            </div>
+            <div id="password-strength-reset" class="password-strength"></div>
+            <button type="submit" class="btn">Reset Password</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+

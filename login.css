@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F8EDED; /* Light background color */
+    color: #173B45; /* Dark text color */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 400px; /* Adjusted max-width for smaller form */
+    width: 100%;
+    padding: 20px; /* Added padding for spacing */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Added shadow for better visual */
+}
+
+form {
+    background-color: #FFFFFF; /* White background for form */
+    border: 1px solid #B43F3F; /* Dark red border */
+    border-radius: 5px;
+    padding: 20px;
+    width: 100%;
+    max-width: 300px; /* Ensure form does not exceed the container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    color: #173B45; /* Dark green for headings */
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border: 1px solid #B43F3F; /* Dark red border */
+    border-radius: 5px;
+}
+
+.input-group span.icon {
+    background-color: #FF8225; /* Bright orange background for icon */
+    color: #FFFFFF; /* White icon */
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+}
+
+.input-group input {
+    border: none;
+    padding: 10px;
+    outline: none;
+    width: 100%; /* Ensure the input field takes full width */
+    border-radius: 0 5px 5px 0;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.forgot-pass {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.forgot-pass a {
+    color: #B43F3F; /* Dark red for forgot password link */
+    text-decoration: none;
+}
+
+.btn {
+    background-color: #173B45; /* Dark green button */
+    color: #FFFFFF; /* White text */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #FF8225; /* Bright orange on hover */
+}
+
+.sign-link {
+    margin-top: 20px;
+}
+
+.sign-link a {
+    color: #B43F3F; /* Dark red for sign link */
+    text-decoration: none;
+}
+
+.password-strength {
+    text-align: left;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+#password-strength {
+    color: #FF8225; /* Bright orange for password strength text */
+}
