@@ -17,15 +17,15 @@ body {
 
 .wrapper {
     position: absolute; /* Changed from static to absolute */
-    top: 0; /* Align to the top of the parent/container */
-    bottom: 0;
+    top: 0.5; /* Align to the top of the parent/container */
+    bottom: 0.5;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: auto;
     background-color: #000000;
-    border-radius: 10px;
+    border-radius: 20px;
     overflow: hidden;
     max-width: 400px; /* Adjusted max-width for smaller form */
     width: 100%;
@@ -40,7 +40,7 @@ form {
     border-radius: 5px;
     padding: 20px;
     width: 100%;
-    max-width: 300px; /* Ensure form does not exceed the container */
+    max-width: 350px; /* Ensure form does not exceed the container */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
