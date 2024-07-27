@@ -1,8 +1,13 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #F8EDED; /* Light background color */
+    background-image: url(images/background3.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
     color: #173B45; /* Dark text color */
-    justify-content: center;
+    display: flex;
+    justify-content: flex-end;
+
     align-items: center;
     height: 100vh;
     margin: 0;
@@ -11,22 +16,26 @@ body {
 }
 
 .wrapper {
+    position: absolute; /* Changed from static to absolute */
+    top: 0; /* Align to the top of the parent/container */
+    bottom: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: auto;
-    background-color: #FFFFFF;
+    background-color: #000000;
     border-radius: 10px;
     overflow: hidden;
     max-width: 400px; /* Adjusted max-width for smaller form */
     width: 100%;
-    padding: 20px; /* Added padding for spacing */
+    padding: 30px; /* Added padding for spacing */
+    padding-top: 100px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Added shadow for better visual */
 }
 
 form {
-    background-color: #FFFFFF; /* White background for form */
+    background-color: #000000; /* White background for form */
     border: 1px solid #B43F3F; /* Dark red border */
     border-radius: 5px;
     padding: 20px;
